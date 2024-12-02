@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-section">
+        <h1 style="text-align:center;">Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message" style="color:red; display:none;">Invalid credentials. Try again.</p>
+    </div>
+
+    <div id="profile-section" style="display:none;">
+        <h1>Profile</h1>
+        <p id="profile-name"></p>
+        <p id="profile-class"></p>
+        <p id="profile-subject"></p>
+        <p id="profile-tutor"></p>
+        <p>Results: <a href="#" id="results-link">View Results</a></p>
+        <div id="messages">
+            <p>Send a message to the tutor:</p>
+            <textarea id="message-box"></textarea>
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+    <div id="results-section" style="display:none;">
+        <h2>Results</h2>
+        <p id="results-info"></p>
+        <button id="back-to-profile">Back to Profile</button>
+        <button id="print-results">Print Results</button>
+        <p id="signature" style="margin-top: 20px;">Signature: Ahammed Najad</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
